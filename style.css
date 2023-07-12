@@ -226,6 +226,7 @@ LANDING PAGE
 }
 
 .mail__btn {
+  z-index: 50;
   width: 70px;
   height: 70px;
   font-size: 32px;
