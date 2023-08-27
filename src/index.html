@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anthony Cakin Portfolio</title>
+    <script src="/index.js"></script>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon.ico"
+    />
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("xSrf96z8wZJVPEI1y");
+      })();
+    </script>
+    <link href="/style.css" rel="stylesheet" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <section id="landing__page" onmousemove="moveBackground(event)">
+      <nav>
+        <figure>
+          <img id="personal-logo" src="./assets/logo-cakin.jpg " alt="" />
+        </figure>
+        <ul class="nav__link--list">
+          <li class="nav__link" onclick="toggleModal()">
+            <a
+              href="#about"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >About</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="#projects"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Projects</a
+            >
+          </li>
+          <li class="nav__link" onclick="toggleModal()">
+            <a
+              href="#contacts"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Contact</a
+            >
+          </li>
+          <li class="nav__link click" onclick="toggleContrast()">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              ><i class="fas fa-adjust"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <header class="header">
+        <div class="header__content">
+          <h1 class="title font-bold">Hey</h1>
+          <h1 class="title orange font-bold">I'm Anthony.</h1>
+          <p class="header__para">
+            I'm a <b class="orange"> Frontend Software Engineer</b> with a
+            strong passion for building web applications with great user
+            experiences.
+            <br />
+            Here's a bit more
+            <b class="orange click" onclick="toggleModal()">about me</b>
+          </p>
+          <div class="social__list">
+            <a
+              href="https://www.linkedin.com/in/anthony-cakin/"
+              target="_blank"
+              class="social__link click"
+            >
+              <i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+              href="https://github.com/Cakinn1"
+              target="_blank"
+              class="social__link click"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              target="_blank"
+              href="https://docs.google.com/document/d/1CaIqu4uNkIZqyNLOiQt5kd5pz4iVER-O/edit?usp=sharing&ouid=111780624292922806771&rtpof=true&sd=true"
+              class="social__link click"
+            >
+              <i class="fa fa-file-pdf"></i>
+            </a>
+          </div>
+        </div>
+      </header>
+      <a href="#">
+        <button class="mail__btn click" onclick="toggleModal()">
+          <i class="fas fa-envelope"></i>
+        </button>
+      </a>
+      <a href="#projects" class="scroll">
+        <div class="scroll__icon click"></div>
+      </a>
+      <div class="modal">
+        <div class="modal__half modal__about">
+          <h3 class="modal__title modal__title--about font-bold">
+            Here's a bit about me.
+          </h3>
+          <h4 class="modal__sub-title modal__sub-titile--about font-bold">
+            Frontend Software Engineer.
+          </h4>
+          <p class="modal__para">
+            I'm a 20 year old Australian
+            <b class="orange"> frontend software engineer </b>with an unwavering
+            passion for crafting captivating <br />
+            <b class="orange"> user experiences.</b> <br />
+            As a young professional in the tech realm, I specialize in creating
+            dynamic and user-centric websites that leave a
+            <b class="orange">lasting impact.</b> 🌐✨
+          </p>
+          <div class="modal__languages">
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+                alt=""
+              />
+              <span class="language__name">HTML</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+                alt=""
+              />
+              <span class="language__name">CSS</span>
+            </figure>
+
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
+                alt=""
+              />
+              <span class="language__name">JavaScript</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://cdn.iconscout.com/icon/free/png-256/typescript-3521774-2945272.png"
+                alt=""
+              />
+              <span class="language__name">TypeScript</span>
+            </figure>
+
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+                alt=""
+              />
+              <span class="language__name">TailwindCSS</span>
+            </figure>
+
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
+                alt=""
+              />
+              <span class="language__name">React.js</span>
+            </figure>
+
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="./assets/next-js.svg"
+                alt=""
+              />
+              <span class="language__name">Next.js</span>
+            </figure>
+
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://cdn.iconscout.com/icon/free/png-512/free-redux-283024.png?f=avif&w=256"
+                alt=""
+              />
+              <span class="language__name">Redux</span>
+            </figure>
+          </div>
+        </div>
+        <div class="modal__half modal__contact">
+          <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+          <h3 class="modal__title modal__title--contact font-bold">
+            Let's have a chat!
+          </h3>
+          <h3 class="modal__sub-title modal__sub-title--contact font-bold">
+            I'm currently open to new opportunities.
+          </h3>
+          <form id="contact__form" onsubmit="contact(event)">
+            <div class="form__item">
+              <label class="form__item--label">Name</label>
+              <input class="input" name="user_name" type="text" />
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Email</label>
+              <input class="input" name="user_email" type="email" />
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Message</label>
+              <textarea class="input" name="message" type="text"></textarea>
+            </div>
+            <button id="contact__submit" class="form__submit">
+              Send it my way
+            </button>
+          </form>
+          <div class="modal__overlay modal__overlay--loading">
+            <i class="fas fa-spinner"></i>
+          </div>
+          <div class="modal__overlay modal__overlay--success">
+            Thanks for the message! Looking forward to speaking to you soon.
+          </div>
+        </div>
+      </div>
+      <img src="./assets/semi circle.svg" class="shape shape--0" />
+      <img src="./assets/circle.svg" class="shape shape--1" />
+      <img src="./assets/squiggly.svg" class="shape shape--2" />
+      <img src="./assets/circle.svg" class="shape shape--3" />
+      <img src="./assets/triangle.svg" class="shape shape--4" />
+      <img src="./assets/circle.svg" class="shape shape--5" />
+      <img src="./assets/squiggly.svg" class="shape shape--6" />
+      <img src="./assets/circle.svg" class="shape shape--7" />
+      <img src="./assets/semi circle.svg" class="shape shape--8" />
+    </section>
+
+    <section id="projects">
+      <div class="container max-w-[1100px] mx-auto">
+        <div class="row">
+          <h1 class="section__title font-bold">
+            Here are some of my <span class="font-bold orange">projects</span>
+          </h1>
+          <!-- <ul class="project__list">
+            <li class="project">
+              <div class="project__wrapper">
+                <img src="./assets/Untitled.png" class="project__img" alt="" />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title font-bold">
+                    Netflix Clone
+                  </h3>
+                  <h4 class="project__description--sub-title font-bold">
+                    Next.js, Javascript, TypeScript, HTML and TailwindCss
+                  </h4>
+                  <p class="project__description--para">
+                    This project is a Next.Js-based Netflix clone, emulating the
+                    immersive streaming experience. Users can seamlessly browse
+                    and watch a diverse range of movies and TV shows. The
+                    interface replicates Netflix's allure with a dynamic home
+                    page, stripe payment portal, and captivating content pages.
+                    This project demonstrates my aptitude in creating an
+                    engaging streaming platform while ensuring an intuitive user
+                    journey.
+                  </p>
+                  
+                  <div class="project__description--links">
+                    <a
+                      href="https://github.com/Cakinn1/netflix-clone"
+                      target="_blank"
+                      class="project__description--link"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a
+                      href="https://netflix-clone-clone.vercel.app/"
+                      target="_blank"
+                      class="project__description--link"
+                    >
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul> -->
+        </div>
+      </div>
+
+      <section class="max-w-[1100px] mx-auto mt-10">
+        <div class="flex pb-16 relative px-10">
+          <figure class="md:w-1/2 w-2/3">
+            <img
+              src="./assets/Untitled.png"
+              class="rounded-md shadow-2xl shadow-outline"
+              alt=""
+            />
+          </figure>
+          <div
+            class="w-1/2 flex md:justify-items-end lg:items-end flex-col md:ml-10 lg:ml-0 text-center md:text-left"
+          >
+            <span class="text-[#F06449] font-semibold">Featured Project</span>
+            <h1 class="font-extrabold md:text-[40px] text-[20px] title">
+              Netflix Clone
+            </h1>
+            <p
+              class="hidden lg:flex text-[16px] bg-white shadow-2xl shadow-outline z-20 absolute top-[134px] rounded-md left-1/2 -translate-x-1/2 -translate-y-1/2 ml-[220px] max-w-[600px] w-full p-5"
+            >
+              Next.js-based Netflix clone: Immersive streaming, movies, TV
+              shows, dynamic homepage, Stripe payments. Engaging platform,
+              intuitive journey.
+            </p>
+            <div
+              class="hidden lg:mt-28 md:flex lg:items-center gap-x-3 text-[10px] flex-wrap"
+            >
+              <p class="text-[14px] title">OMDB Api</p>
+              <p class="text-[14px] title">FireBase</p>
+              <p class="text-[14px] title">TailwindCSS</p>
+              <p class="text-[14px] title">TypeScript</p>
+              <p class="text-[14px] title">Javascript</p>
+              <p class="text-[14px] title">Next.js</p>
+            </div>
+            <div class="mt-2">
+              <!--        class="project__description--link" changes color to white for links -->
+              <a
+                href="https://github.com/Cakinn1/netflix-clone"
+                target="_blank"
+                class="mr-2"
+              >
+                <i
+                  class="fab fa-github border border-[#F05449] text-[#f05449] rounded-full p-1 text-[20px] bg-transparent"
+                ></i>
+              </a>
+              <a href="https://netflix-clone-clone.vercel.app/" target="_blank">
+                <i
+                  class="fas fa-link border border-[#F05449] text-[#f05449] rounded-full p-1 text-[20px] bg-transparent"
+                ></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="max-w-[1100px] mx-auto">
+        <div class="flex pb-16 relative px-10">
+          <div
+            class="w-1/2 flex md:justify-items-start lg:items-start flex-col md:ml-10 lg:ml-0 text-center md:text-left"
+          >
+            <span class="text-[#F06449] font-semibold">Featured Project</span>
+            <h1 class="font-extrabold md:text-[40px] text-[20px] title">
+              Virtual Internship
+            </h1>
+            <p
+              class="hidden lg:flex text-[16px] bg-white shadow-2xl shadow-outline z-20 absolute top-[134px] text-center rounded-md right-0 mr-[160px] -translate-x-1/2 -translate-y-1/2 max-w-[600px] w-full p-5"
+            >
+              This project was a Virtual Internship mockup where I had to create
+              all the functionability using the data provided via an API.
+            </p>
+            <div
+              class="hidden lg:mt-28 md:flex lg:items-center gap-x-3 text-[10px] flex-wrap"
+            >
+              <p class="text-[14px] title">HTML</p>
+              <p class="text-[14px] title">CSS</p>
+              <p class="text-[14px] title">React.js</p>
+              <p class="text-[14px] title">Javascript</p>
+              <p class="text-[14px] title">FES Api</p>
+            </div>
+            <div class="mt-2">
+              <!--        class="project__description--link" changes color to white for links -->
+              <a
+                href="https://github.com/Cakinn1/Anthony-internship"
+                target="_blank"
+                class="mr-2"
+              >
+                <i
+                  class="fab fa-github border border-[#F05449] text-[#f05449] rounded-full p-1 text-[20px] bg-transparent"
+                ></i>
+              </a>
+              <a href="https://anthony-internship.vercel.app/" target="_blank">
+                <i
+                  class="fas fa-link border border-[#F05449] text-[#f05449] rounded-full p-1 text-[20px] bg-transparent"
+                ></i>
+              </a>
+            </div>
+          </div>
+          <figure class="md:w-1/2 w-2/3">
+            <img
+              src="./assets2/internship.png"
+              class="rounded-md shadow-2xl shadow-outline"
+              alt=""
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="max-w-[1100px] mx-auto">
+        <div class="flex pb-16 relative px-10">
+          <figure class="md:w-1/2 w-2/3">
+            <img
+              src="./assets2/twitter clone.png"
+              class="rounded-md shadow-2xl shadow-outline"
+              alt=""
+            />
+          </figure>
+          <div
+            class="w-1/2 flex md:justify-items-end lg:items-end flex-col md:ml-10 lg:ml-0 text-center md:text-left"
+          >
+            <span class="text-[#F06449] font-semibold">Featured Project</span>
+            <h1 class="font-extrabold md:text-[40px] text-[20px] title">
+              Twitter Clone
+            </h1>
+            <p
+              class="hidden lg:flex text-[16px] bg-white shadow-2xl shadow-outline z-20 absolute top-[134px] rounded-md left-1/2 -translate-x-1/2 -translate-y-1/2 ml-[220px] max-w-[600px] w-full p-5"
+            >
+              A Twitter Clone featuring a responsive UI, real-time data sync,
+              secure authentication, and comprehensive CRUD functionality.
+            </p>
+            <div
+              class="hidden lg:mt-28 md:flex lg:items-center gap-x-3 text-[10px] flex-wrap"
+            >
+              <p class="text-[14px] title">Redux</p>
+              <p class="text-[14px] title">FireBase</p>
+              <p class="text-[14px] title">TailwindCSS</p>
+              <p class="text-[14px] title">Javascript</p>
+              <p class="text-[14px] title">Next.js</p>
+            </div>
+            <div class="mt-2">
+              <!--        class="project__description--link" changes color to white for links -->
+              <a
+                href="https://github.com/Cakinn1/twitter-clone"
+                target="_blank"
+                class="mr-2"
+              >
+                <i
+                  class="fab fa-github border border-[#F05449] text-[#f05449] rounded-full p-1 text-[20px] bg-transparent"
+                ></i>
+              </a>
+              <a
+                href="https://twitter-clone-cakinn1.vercel.app/"
+                target="_blank"
+              >
+                <i
+                  class="fas fa-link border border-[#F05449] text-[#f05449] rounded-full p-1 text-[20px] bg-transparent"
+                ></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="max-w-[1100px] mx-auto">
+        <div class="flex pb-16 relative px-10">
+          <div
+            class="w-1/2 flex md:justify-items-start lg:items-start flex-col md:ml-10 lg:ml-0 text-center md:text-left"
+          >
+            <span class="text-[#F06449] font-semibold">Featured Project</span>
+            <h1 class="font-extrabold md:text-[40px] text-[20px] title">
+              Google Clone
+            </h1>
+            <p
+              class="hidden lg:flex text-[16px] bg-white shadow-2xl shadow-outline z-20 absolute top-[134px] text-center rounded-md right-0 mr-[160px] -translate-x-1/2 -translate-y-1/2 max-w-[600px] w-full p-5"
+            >
+              Utilized React to recreate Google's search experience, combining
+              modern design and responsiveness.
+            </p>
+            <div
+              class="hidden lg:mt-28 md:flex lg:items-center gap-x-3 text-[10px] flex-wrap"
+            >
+              <p class="text-[14px] title">CSS</p>
+              <p class="text-[14px] title">Javascript</p>
+              <p class="text-[14px] title">React.js</p>
+              <p class="text-[14px] title">Google Api</p>
+            </div>
+            <div class="mt-2">
+              <!--        class="project__description--link" changes color to white for links -->
+              <a
+                href="https://github.com/Cakinn1/google-clone"
+                target="_blank"
+                class="mr-2"
+              >
+                <i
+                  class="fab fa-github border border-[#F05449] text-[#f05449] rounded-full p-1 text-[20px] bg-transparent"
+                ></i>
+              </a>
+              <a
+                href="https://google-clone-orpin-alpha.vercel.app/"
+                target="_blank"
+              >
+                <i
+                  class="fas fa-link border border-[#F05449] text-[#f05449] rounded-full p-1 text-[20px] bg-transparent"
+                ></i>
+              </a>
+            </div>
+          </div>
+          <figure class="md:w-1/2 w-2/3">
+            <img
+              src="./assets2/google.png"
+              class="rounded-md shadow-2xl shadow-outline"
+              alt=""
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="max-w-[1100px] mx-auto">
+        <div class="flex pb-16 relative px-10">
+          <figure class="md:w-1/2 w-2/3">
+            <img
+              src="./assets2/reddit1.png"
+              class="rounded-md shadow-2xl shadow-outline"
+              alt=""
+            />
+          </figure>
+          <div
+            class="w-1/2 flex md:justify-items-end lg:items-end flex-col md:ml-10 lg:ml-0 text-center md:text-left"
+          >
+            <span class="text-[#F06449] font-semibold">Featured Project</span>
+            <h1 class="font-extrabold md:text-[40px] text-[20px] title">
+              Reddit Clone
+            </h1>
+            <p
+              class="hidden lg:flex text-[16px] bg-white shadow-2xl shadow-outline z-20 absolute top-[134px] rounded-md left-1/2 -translate-x-1/2 -translate-y-1/2 ml-[220px] max-w-[600px] w-full p-5"
+            >
+              Engineered with CRUD capabilities, featuring responsive UI,
+              real-time data sync, and secure authentication, akin to a popular
+              discussion platform.
+            </p>
+            <div
+              class="hidden lg:mt-28 md:flex lg:items-center gap-x-3 text-[10px] flex-wrap"
+            >
+              <p class="text-[14px] title">Redux</p>
+              <p class="text-[14px] title">FireBase</p>
+              <p class="text-[14px] title">TailwindCSS</p>
+              <p class="text-[14px] title">Javascript</p>
+              <p class="text-[14px] title">React.js</p>
+            </div>
+            <div class="mt-2">
+              <!--        class="project__description--link" changes color to white for links -->
+              <a
+                href="https://github.com/Cakinn1/Reddit-clone"
+                target="_blank"
+                class="mr-2"
+              >
+                <i
+                  class="fab fa-github border border-[#F05449] text-[#f05449] rounded-full p-1 text-[20px] bg-transparent"
+                ></i>
+              </a>
+              <a
+                href="https://reddit-clone-beta-rosy.vercel.app/"
+                target="_blank"
+              >
+                <i
+                  class="fas fa-link border border-[#F05449] text-[#f05449] rounded-full p-1 text-[20px] bg-transparent"
+                ></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="max-w-[1100px] mx-auto mt-32">
+        <div class="flex pb-16 relative px-10">
+          <div
+            class="w-1/2 flex md:justify-items-start lg:items-start flex-col md:ml-10 lg:ml-0 text-center md:text-left"
+          >
+            <span class="text-[#F06449] font-semibold">Featured Project</span>
+            <h1 class="font-extrabold md:text-[40px] text-[20px] title">
+              E-commerce Library App
+            </h1>
+            <p
+              class="hidden lg:flex text-[16px] bg-white shadow-2xl shadow-outline z-20 absolute top-[134px] text-center rounded-md right-0 mr-[160px] -translate-x-1/2 -translate-y-1/2 max-w-[600px] w-full p-5"
+            >
+              Ecom Library: React app, versatile sorting, seamless purchases,
+              enhanced UX, skeleton loading. Showcases UI/UX skills, algorithm
+              implementation.
+            </p>
+            <div
+              class="hidden lg:mt-28 md:flex lg:items-center gap-x-3 text-[10px] flex-wrap"
+            >
+              <p class="text-[14px] title">CSS</p>
+              <p class="text-[14px] title">Javascript</p>
+              <p class="text-[14px] title">React.js</p>
+              <p class="text-[14px] title">FES Api</p>
+            </div>
+            <div class="mt-2">
+              <a
+                href="https://github.com/Cakinn1/Ecom-Library-React"
+                target="_blank"
+                class="mr-2"
+              >
+                <i
+                  class="fab fa-github border border-[#F05449] text-[#f05449] rounded-full p-1 text-[20px] bg-transparent"
+                ></i>
+              </a>
+              <a
+                href="https://ecom-library-react-v3.vercel.app/"
+                target="_blank"
+              >
+                <i
+                  class="fas fa-link border border-[#F05449] text-[#f05449] rounded-full p-1 text-[20px] bg-transparent"
+                ></i>
+              </a>
+            </div>
+          </div>
+          <figure class="md:w-1/2 w-2/3">
+            <img
+              src="./assets2/libarary.png"
+              class="rounded-md shadow-2xl shadow-outline"
+              alt=""
+            />
+          </figure>
+        </div>
+      </section>
+
+      <!-- Add Other Projets Here -->
+      <section class="mt-32 max-w-[1100px] mx-auto pb-[120px]">
+        <div class="flex justify-center items-center">
+          <h1 class="section__title font-bold">
+            Other Interesting <span class="font-bold orange">Projects</span>
+          </h1>
+        </div>
+        <div
+          class="flex mt-10 items-center justify-center gap-x-4 flex-wrap w-[100%] max-w-[1100px] gap-y-4"
+        >
+          <div
+            class="lg:w-[26%] md:w-[45%] sm:w-[100%] h-[300px] bg-[#ffff] rounded-md shadow-2xl p-6"
+          >
+            <div class="flex items-center justify-between">
+              <i class="fas fa-regular fa-folder text-[60px]"></i>
+              <div>
+                <a
+                  href="https://github.com/Cakinn1/Discord-clone"
+                  target="_blank"
+                >
+                  <i class="fab fa-github text-[24px] mr-2"></i>
+                </a>
+                <a
+                  href="https://discord-clone-cakinn1.vercel.app/"
+                  target="_blank"
+                >
+                  <i class="fas fa-solid fa-link text-[24px]"></i>
+                </a>
+              </div>
+            </div>
+            <div class="mt-4 mb-2">
+              <h1 class="font-bold">Discord Clone</h1>
+              <p class="text-sm">
+                React app for real-time chat, dynamic channels, CRUD
+                functionality, and server management.
+              </p>
+            </div>
+            <div class="flex items-center gap-x-2 flex-wrap font-bold text-sm">
+              <p>React.js</p>
+              <p>JavaScript</p>
+              <p>TailwindCss</p>
+              <p>Firebase</p>
+            </div>
+          </div>
+          <div
+            class="lg:w-[26%] md:w-[45%] sm:w-[100%] h-[300px] bg-[#ffff] rounded-md shadow-2xl p-6"
+          >
+            <div class="flex items-center justify-between">
+              <i class="fas fa-regular fa-folder text-[60px]"></i>
+              <div>
+                <a
+                  href="https://github.com/Cakinn1/Tesla-Clone-v3"
+                  target="_blank"
+                >
+                  <i class="fab fa-github text-[24px] mr-2"></i>
+                </a>
+                <a href="https://tesla-clone-v3.vercel.app/" target="_blank">
+                  <i class="fas fa-solid fa-link text-[24px]"></i>
+                </a>
+              </div>
+            </div>
+            <div class="mt-4 mb-2">
+              <h1 class="font-bold">Tesla Clone</h1>
+              <p class="text-sm">
+                React & Redux project with secure authentication with Firebase
+                and polished UI
+              </p>
+            </div>
+            <div class="flex items-center gap-x-2 flex-wrap font-bold text-sm">
+              <p>React.js</p>
+              <p>Redux</p>
+              <p>JavaScript</p>
+              <p>TailwindCss</p>
+              <p>Firebase</p>
+            </div>
+          </div>
+          <div
+            class="lg:w-[26%] md:w-[45%] sm:w-[100%] h-[300px] bg-[#ffff] rounded-md shadow-2xl p-6"
+          >
+            <div class="flex items-center justify-between">
+              <i class="fas fa-regular fa-folder text-[60px]"></i>
+              <div>
+                <a href="https://thewebwizards.info/" target="_blank">
+                  <i class="fas fa-solid fa-link text-[24px]"></i>
+                </a>
+              </div>
+            </div>
+            <div class="mt-4 mb-2">
+              <h1 class="font-bold">Website Agency.</h1>
+              <p class="text-sm">
+                Collaborated with an website agency to develop three impressive
+                demo projects, as well as crafting their agency website.
+              </p>
+            </div>
+            <div class="flex items-center gap-x-2 flex-wrap font-bold text-sm">
+              <p>HTML</p>
+              <p>CSS</p>
+              <p>JavaScript</p>
+            </div>
+          </div>
+          <div
+            class="lg:w-[26%] md:w-[45%] sm:w-[100%] h-[300px] bg-[#ffff] rounded-md shadow-2xl p-6"
+          >
+            <div class="flex items-center justify-between">
+              <i class="fas fa-regular fa-folder text-[60px]"></i>
+              <div>
+                <a href="https://github.com/Cakinn1/movie-lab" target="_blank">
+                  <i class="fab fa-github text-[24px] mr-2"></i>
+                </a>
+                <a href="https://movie-lab-ebon.vercel.app/" target="_blank">
+                  <i class="fas fa-solid fa-link text-[24px]"></i>
+                </a>
+              </div>
+            </div>
+            <div class="mt-4 mb-2">
+              <h1 class="font-bold">Movie Lab</h1>
+              <p class="text-sm">
+                React project: Utilized params, skeleton loading, and omdb API
+                for dynamic movie app. Sorted movies by year, newest to oldest
+              </p>
+            </div>
+            <div class="flex items-center gap-x-2 flex-wrap font-bold text-sm">
+              <p>React.js</p>
+              <p>JavaScript</p>
+              <p>TailwindCss</p>
+              <p>CSS Animations</p>
+              <p>OMDB Api</p>
+            </div>
+          </div>
+          <div
+            class="lg:w-[26%] md:w-[45%] sm:w-[100%] h-[300px] bg-[#ffff] rounded-md shadow-2xl p-6"
+          >
+            <div class="flex items-center justify-between">
+              <i class="fas fa-regular fa-folder text-[60px]"></i>
+              <div>
+                <a
+                  href="https://github.com/Cakinn1/T-react-week-2"
+                  target="_blank"
+                >
+                  <i class="fab fa-github text-[24px] mr-2"></i>
+                </a>
+                <a href="https://t-react-week-2.vercel.app/" target="_blank">
+                  <i class="fas fa-solid fa-link text-[24px]"></i>
+                </a>
+              </div>
+            </div>
+            <div class="mt-4 mb-2">
+              <h1 class="font-bold">T-React Clone</h1>
+              <p class="text-sm">
+                Replicated T-React's website using HTML and CSS. Gained insights
+                into flexbox techniques and employed semantic HTML for improved
+                structure.
+              </p>
+            </div>
+            <div class="flex items-center gap-x-2 flex-wrap font-bold text-sm">
+              <p>HTML</p>
+              <p>CSS</p>
+            </div>
+          </div>
+          <div
+            class="lg:w-[26%] md:w-[45%] sm:w-[100%] h-[300px] bg-[#ffff] rounded-md shadow-2xl p-6"
+          >
+            <div class="flex items-center justify-between">
+              <i class="fas fa-regular fa-folder text-[60px]"></i>
+              <div>
+                <a
+                  href="https://github.com/Cakinn1/ecom-nextjs-app"
+                  target="_blank"
+                >
+                  <i class="fab fa-github text-[24px] mr-2"></i>
+                </a>
+                <a href="https://ecom-nextjs-app.vercel.app/" target="_blank">
+                  <i class="fas fa-solid fa-link text-[24px]"></i>
+                </a>
+              </div>
+            </div>
+            <div class="mt-4 mb-2">
+              <h1 class="font-bold">Discord Clone</h1>
+              <p class="text-sm">
+                Developed a Next.js app (v13.4.1) as an educational endeavor.
+                Incorporated Tailwind CSS and TypeScript.
+              </p>
+            </div>
+            <div class="flex items-center gap-x-2 flex-wrap font-bold text-sm">
+              <p>Next.js</p>
+              <p>JavaScript</p>
+              <p>TypeScipt</p>
+              <p>TailwindCss</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <footer>
+      <div class="container max-w-[1100px] mx-auto">
+        <div class="row footer__row">
+          <figure>
+            <img
+              class="footer__logo--img"
+              src="./assets/logo-cakin.jpg"
+              alt=""
+            />
+          </figure>
+          <div class="footer__social--list">
+            <a
+              href="https://github.com/Cakinn1"
+              target="_blank"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/anthony-cakin/"
+              target="_blank"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="#"
+              onclick="toggleModal()"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              Contact
+            </a>
+            <a
+              href="https://docs.google.com/document/d/1CaIqu4uNkIZqyNLOiQt5kd5pz4iVER-O/edit?usp=sharing&ouid=111780624292922806771&rtpof=true&sd=true"
+              target="_blank"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              Resume
+            </a>
+          </div>
+          <div class="footer__copyright">
+            Copyright &copy; 2023 Anthony Cakin
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
