@@ -1,15 +1,11 @@
 {
-  "folders": [
-	{
+	"folders": [
+	  {
 		"name": "Advanced E-Portfolio",
 		"path": "."
-	},
-	{
-		"name": "assets",
-		"path": "../../Downloads/Tutorial Exclusive Eportfolio/assets"
+	  }
+	],
+	"settings": {
+	  "liveServer.settings.multiRootWorkspaceName": "Advanced E-Portfolio"
 	}
-],
-  "settings": {
-    "liveServer.settings.multiRootWorkspaceName": "Advanced E-Portfolio"
   }
-}
