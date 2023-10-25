@@ -55,3 +55,36 @@ function toggleModal() {
   isModalOpen = true;
   document.body.classList += " modal--open";
 }
+
+//  loading screen
+let loading = true;
+
+// function handleLoadingScreen() {
+//   const loadingScreen = document.getElementById("loading-page");
+//   const mailBtn = document.querySelector(".mail__btn");
+//   if (loading) {
+//     document.body.style.overflow = "hidden";
+//     mailBtn.classList.remove("mail__btn");
+//     loadingScreen.classList.add("loading-screen");
+//   }
+//   // setTimeout(() => {
+//   //   loading = false;
+//   //   console.log(loading);
+//   //   mailBtn.classList.add("mail__btn");
+//   //   document.body.style.overflow = "auto";
+
+//   //   loadingScreen.classList.remove("loading-screen");
+//   // }, 4000);
+// }
+// document.addEventListener("DOMContentLoaded", handleLoadingScreen);
+
+// document.addEventListener("DOMContentLoaded", () => {
+// const progressBar = document.getElementsByClassName('loading-bar')[0]
+// setInterval(() => {
+//   const computeredStyle = getComputedStyle(progressBar)
+//   const width = parseFloat(computeredStyle.getPropertyValue('--width')) || 0
+// progressBar.style.setProperty('--width', width + .1)
+
+// })
+//   console.log(progressBar)
+// });

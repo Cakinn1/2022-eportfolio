@@ -722,3 +722,38 @@ SHAPES
     padding: 40px;
   }
 }
+
+/* .loading-screen {
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+
+.loading-bar {
+  width: 500px;
+  height: 3em;
+  background-color: gray;
+  border-radius: 999px;
+  color: white;
+  position: relative;
+}
+
+.loading-bar::before {
+  content: attr(data-label);
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: .5em;
+  top: .5em;
+  bottom: .5em;
+  width: calc(var(--width, 0) * 1%);
+  min-width: 2rem;
+  max-width: calc(100% - 1em);
+  background-color: #069;
+  border-radius: 999px;
+  padding: 1em;
+} */
